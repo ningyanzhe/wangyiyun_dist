@@ -1,0 +1,132 @@
+.maskbox{
+  position: fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  left:0;
+  background: white;
+  z-index:9;
+}
+.masknone{
+  display: none;
+}
+.mask_content{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  .logo{
+    width:100%;
+    height:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+      width:28%;
+      height:auto;
+    }
+  }
+  .btnbox{
+    width:100%;
+    height:30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p{
+      width:80%;
+      height:.8rem;
+      border-radius: .5rem;
+      border:1px solid black;
+      text-align: center;
+      line-height: .8rem;
+    }
+  }
+  .mask_foot{
+    width:100%;
+    flex:1;
+    text-align: center;
+    .mask_foot_bot{
+      width:100%;
+      height:90%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .mask_foot_bot_one{
+        width:25%;
+        height:auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .mask_foot_bot_one_img{
+          width:.8rem;
+          height:.8rem;
+          img{
+            width:.8rem;
+            height:auto;
+            border-radius: 50%;
+          }
+          p{
+            width:100%;
+            height:auto;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+.loginMask_wrap{
+  position: fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: white;
+  z-index:99;
+}
+.loginMask_none{
+  display: none;
+}
+.isLoginMask_head{
+  width:100%;
+  height:1rem;
+  background: red;
+  display: flex;
+  justify-content: space-between;
+  padding:0 .2rem;
+  box-sizing: border-box;
+  align-items: center;
+  color:white;
+}
+.isLoginMask_content{
+  padding:0 .2rem;
+  box-sizing: border-box;
+  input{
+    border:0;
+    border-bottom: 1px solid #aaa;
+    width:100%;
+    height:.7rem;
+    margin-top:.2rem;
+    line-height: .7rem;
+    text-indent: .26rem;
+  }
+  p{
+    width:90%;
+    height:.8rem;
+    border-radius: .5rem;
+    color:white;
+    text-align: center;
+    line-height: .8rem;
+    background: red;
+    margin-top:.4rem;
+    margin-left:5%;
+  }
+  a{
+    display: block;
+    width:100%;
+    color:black;
+    text-align: center;
+    margin-top:.3rem;
+  }
+}

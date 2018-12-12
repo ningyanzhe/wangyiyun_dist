@@ -1,0 +1,135 @@
+.head{
+  width:100%;
+  height:1rem;
+  background: #33383A;
+  display: flex;
+  padding:0.2rem;
+  box-sizing: border-box;
+  align-items: center;
+  flex-shrink: 0;
+  box-sizing: border-box; 
+  .lookaudio{
+    width:.5rem;
+    height:100%;
+    background: url('../../assets/yinpin.png') no-repeat 0 0/100%;
+    margin-top:.2rem;
+  }
+  .lookmusic{
+    width:.5rem;
+    height:100%;
+    background: url('../../assets/huatong.png') no-repeat 0 0/100%;
+    margin-top:.2rem;
+  }
+  .search{
+    height:100%;
+    flex:1;
+    a{
+      width:100%;
+      height:100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      input{
+        width:80%;
+        height:98%;
+        border-radius: .3rem;
+        border:0;
+        background: rgba(0,0,0,.2);
+        margin-top:.1rem;
+      }
+    }
+    input::-webkit-input-placeholder{
+      color:white;
+      text-align: center;
+      font-size:.3rem;
+}
+  }
+}
+.foot{
+  width:100%;
+  height:1.2rem;
+  background: #33383A;
+  color:white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  a{
+    height:100%;
+    width:25%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top:.1rem;
+    div{
+      width:40%;
+      margin-left:30%;
+      flex:1;
+      text-align: center;
+    }
+    span{
+      color:white;
+      width:100%;
+      height:20px;
+    }
+  }
+  a:first-child{
+    div{
+      background: url('../../assets/wangyiyunyinle.png') no-repeat 0 0/100%;
+    }
+  }
+  a:nth-child(2){
+    div{
+      background: url('../../assets/shipin.png') no-repeat 0 0/100%
+    }
+  }
+  a:nth-child(3){
+    div{
+      background: url('../../assets/yinyue.png') no-repeat 0 0/100%
+    }
+  }
+  a:nth-child(4){
+    div{
+      background: url('../../assets/pengyou.png') no-repeat 0 0/100%
+    }
+  }
+  a:nth-child(5){
+    div{
+      background: url('../../assets/wode.png') no-repeat 0 0/100%
+    }
+  }
+}
+.content{
+  flex:1;
+  overflow: hidden;
+}
+.navbox{
+  width:100%;
+  height:.8rem;
+  background: #33383A;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .act{
+    color:#fff;
+    border-bottom: 2px solid #33383A;
+  }
+  .active{
+    color:#fff;
+    border-bottom: 2px solid #fff;
+  }
+  a{
+    display: block;
+    color:white;
+    height:90%;
+    padding-bottom: .1rem;
+    line-height:.6rem;
+  }
+}
+.look_wrap{
+  width:100%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+}

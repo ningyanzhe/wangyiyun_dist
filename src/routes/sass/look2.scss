@@ -1,0 +1,45 @@
+.getAnchor_content{
+  width:100%;
+  flex:1;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  .getAnchor_p{
+    margin-top:.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0 .22rem;
+    box-sizing: border-box;
+    font-weight: 800px;
+    font-size: .32rem;
+  }
+}
+.getAnchor_wrap{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  .getAnchor_one{
+    flex-shrink: 0;
+    width:100%;
+    height:auto;
+    padding:.1rem .2rem;
+    box-sizing: border-box;
+    display: flex;
+    .getAnchor_img{
+      width:30%;
+      height:auto;
+      img{
+        width:100%;
+        heihgt:auto;
+      }
+    }
+    .getAnchor_text{
+      padding-left:.1rem;
+      flex:1;
+      height:100%;
+      .getAnchor_p2{
+        font-weight: 600px;
+      }
+    }
+  }
+}

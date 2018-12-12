@@ -1,0 +1,24 @@
+.friend1_navbox{
+  width:100%;
+  height:.8rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #33383A;
+  color:#fff;
+  div{
+    width:auto;
+    height:1rem;
+    display: flex;
+    align-items: center;
+    img{
+      width:.5rem;
+      height:.5rem;
+    }
+    span{
+      padding:0 .3rem;
+      line-height: .8rem;
+      text-align: center;
+    }
+  }
+}

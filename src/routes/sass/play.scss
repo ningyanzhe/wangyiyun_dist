@@ -1,0 +1,263 @@
+:global(#root){
+  padding:0;
+  margin:0;
+  .small_img{
+    width:.5rem;
+    height:.5rem;
+  }
+  .img{
+    width:.8rem;
+    height:.8rem;
+  }
+  .big_img{
+    width:1.2rem;
+    height:1.2rem;
+  }
+  .imgs{
+    width:.8rem;
+    height:.8rem;
+    border-radius: 50%;
+  }
+}
+.play_wrap{
+  width:100%;
+  height:100%;
+  background: darkred;
+  color:black;
+  position: fixed;
+  left:0;
+  top:0;
+  z-index:9;
+  box-sizing: border-box;
+  color:white;
+  .play_goback_box{
+    padding:0 .2rem;
+    box-sizing: border-box;
+    width:100%;
+    height:1rem;
+    background: darkred;
+    border-bottom: 1px solid white;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    span{
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+  }
+  @keyframes music_play {
+    from{
+      transform: rotate(0deg)
+    }
+    to{
+      transform: rotate(360deg)
+    }
+  }
+  .container_wrap{
+    width:100%;
+    height:7.8rem;
+    position: relative;
+  }
+  .imgbox{
+    position: absolute;
+    left:0;
+    top:0;
+    margin-top:1.5rem;
+    width:100%;
+    height:5rem;
+    display: flex;
+    line-height: 5rem;
+    justify-content: center;
+    text-align: center;
+    animation: music_play 10s linear infinite;
+    img{
+      width:5rem;
+      height:5rem;
+      border-radius: 50%;
+      border:1rem solid black;
+    }
+  }
+  .limitbox{
+    width:100%;
+    height:8.5rem;
+    background: black;
+    position: absolute;
+    left:0;
+    top:0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    .limit_child{
+      width:100%;
+      height:1.2rem;
+      display: flex;
+      align-items: center;
+      padding:0 .2rem;
+      box-sizing: border-box;
+      img{
+        margin-right:.2rem;
+      }
+      p{
+        flex:1;
+        white-space:nowrap; 
+        text-overflow:ellipsis; 
+        -webkit-text-overflow:ellipsis; 
+        overflow: hidden;
+      }
+    }
+  }
+  .lyricbox{
+    position: absolute;
+    left:0;
+    top:0;
+    margin-top:.5rem;
+    width:100%;
+    height:7.8rem;
+    background: black;
+    margin-bottom: -.3rem;
+    overflow: hidden;
+    .kong{
+      width:100%;
+      height:4rem;
+      margin-top:.3rem;
+    }
+    .zhanwei{
+      width:100%;
+      height:3.9rem;
+      border:2px solid black;
+    }
+    .lyric_lis{
+      width:100%;
+      height:.8rem;
+      text-align: center;
+      line-height: .8rem;
+      color:white;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+    .lyric_li{
+      width:100%;
+      height:.8rem;
+      text-align: center;
+      line-height: .8rem;
+      color:yellow;
+      font-size:.38rem;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      white-space: nowrap;
+    }
+  }
+  .linebox{
+    margin-top:.3rem;
+    width:100%;
+    height:.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .1rem;
+    p{
+      width:70%;
+      height:.14rem;
+      position: relative;
+      background: white;
+      border-radius: .2rem;
+      .line_span{
+        display: block;
+        height:.14rem;
+        background: darkslategray;
+        position: absolute;
+        left:0;
+        top:0;
+        border-radius: .2rem;
+      }
+      .currentTime{
+        position: absolute;
+        left:-1rem;
+        top:-.2rem;
+        z-index:99;
+      }
+      .duration{
+        position: absolute;
+        right:-1rem;
+        top:-.2rem;
+        z-index:99;
+      }
+    }
+  }
+  .modebox{
+    width:100%;
+    height:1rem;
+    margin-top:.6rem;
+    display: flex;
+    justify-content: space-between;
+    padding:0 .2rem;
+    box-sizing: border-box;
+    align-items: center;
+  }
+  .btnbox{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: space-between;
+    padding:0 .2rem;
+    box-sizing: border-box;
+    margin-top:.5rem;
+    span{
+      display: block;
+      width:auto;
+      height:auto;
+      text-align: center;
+      border-radius: 50%;
+      color:white;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+.mask_none{
+  display: none;
+}
+@keyframes opacity_css {
+  from{
+    left: 100%;
+    opacity: .5;
+  }
+  to{
+    left: 0;
+    opacity: 1;
+  }
+}
+.play_list{
+  width:100%;
+  height:50%;
+  position: fixed;
+  bottom: 0;
+  background: white;
+  z-index:999;
+  animation: opacity_css .5s linear;
+  .back_p{
+    width:100%;
+    height:.8rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: red;
+  }
+  .song_list_wrap{
+    height:100%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    color:black;
+    .scroll_li{
+      width:100%;
+      height:.7rem;
+      line-height: .7rem;
+      border-bottom: 1px solid #aaa;
+      padding:0 .2rem;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
