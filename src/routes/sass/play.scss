@@ -57,7 +57,7 @@
   }
   .container_wrap{
     width:100%;
-    height:7.8rem;
+    height:5.8rem;
     position: relative;
   }
   .imgbox{
@@ -66,22 +66,22 @@
     top:0;
     margin-top:1.5rem;
     width:100%;
-    height:5rem;
+    height:3rem;
     display: flex;
-    line-height: 5rem;
+    line-height: 3rem;
     justify-content: center;
     text-align: center;
     animation: music_play 10s linear infinite;
     img{
-      width:5rem;
-      height:5rem;
+      width:3rem;
+      height:3rem;
       border-radius: 50%;
-      border:1rem solid black;
+      border:.5rem solid black;
     }
   }
   .limitbox{
     width:100%;
-    height:8.5rem;
+    height:6.2rem;
     background: black;
     position: absolute;
     left:0;
@@ -113,7 +113,7 @@
     top:0;
     margin-top:.5rem;
     width:100%;
-    height:7.8rem;
+    height:5.8rem;
     background: black;
     margin-bottom: -.3rem;
     overflow: hidden;
@@ -189,7 +189,7 @@
   .modebox{
     width:100%;
     height:1rem;
-    margin-top:.6rem;
+    margin-top:.4rem;
     display: flex;
     justify-content: space-between;
     padding:0 .2rem;
