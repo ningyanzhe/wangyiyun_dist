@@ -334,14 +334,14 @@ export default class Play extends React.Component {
               <div ref="lyric_scroll" className={styles.lyricbox+" "+"myscroll_box"} style={{opacity:this.state.islyric==true?"1":"0"}}>
                 <div>
                     <div className={styles.zhanwei}></div>
-                    {this.state.lyric.length && this.state.lyric.map((v,i)=>{
+                    {this.state.lyric && this.state.lyric.length && this.state.lyric.map((v,i)=>{
                       return (<div ref={+v.time} className={v.time==this.state.lyricnum?styles.lyric_li:styles.lyric_lis} key={i}>{v.tit}</div>)
                     })}
                     <div className={styles.kong}></div>
                 </div>
               </div>
               <div className={styles.limitbox} style={{opacity:this.state.isdalog_screenfn===true?'1':"0"}}>
-                  {this.state.limit_arr.length && this.state.limit_arr.map((v,i)=>{
+                  {this.state.limit_arr && this.state.limit_arr.length && this.state.limit_arr.map((v,i)=>{
                     return <div className={styles.limit_child} key={i}><img className={styles.imgs} src={v.user.avatarUrl}/><p>{v.content}</p></div>
                   })}
               </div>
@@ -384,7 +384,7 @@ export default class Play extends React.Component {
         <div className={styles.play_list} style={{display:this.state.playList_isShow==false?"none":"block"}}>
           <p className={styles.back_p}><img onClick={this.isshowList.bind(this)} className={styles.small_img} src={require("../../assets/fanhui.png")}/></p>
           <div ref="song_list" className={styles.song_list_wrap}>
-              {this.state.song_list.length && this.state.song_list.map((v,i)=>{
+              {this.state.song_list && this.state.song_list.length && this.state.song_list.map((v,i)=>{
                 return (<div className={styles.scroll_li} onClick={()=>{this.daload_change_fn(v.name,v.id)}} key={i}><span>{v.name}</span><img className={styles.small_img} src={require("../../assets/xuanxiang.png")}/></div>)
               })}
           </div>
