@@ -32,13 +32,15 @@ export default class Search extends React.Component {
   }
   //点击搜素
   searchfn(){
+    //埋点
+    window._hmt.push(['_trackEvent','网易云音乐','按钮点击','搜索按钮'])
     if(this.state.input_val.length>0){
       this.props.getSearch(this.state.input_val)
     }else{
       alert("请先输入关键字")
     }
   }
-  //input值得绑定
+  //input值得绑定 
   changefn(e){
     this.setState({
       input_val:e.target.value

@@ -27,9 +27,21 @@
 </script>
 <script src="//cdn.jsdelivr.net/npm/eruda">
 </script>
-<script>
-eruda.init()
+<script src="https://browser.sentry-cdn.com/4.4.1/bundle.min.js" crossorigin="anonymous">
 </script>
+<script>
+eruda.init();
+Sentry.init({ dsn: 'https://5a34b0d8330a49ecb6f28c5545692a46@sentry.io/1352776' })
+</script>
+<script>
+  var _hmt = _hmt || [];
+  (function() {
+    var hm = document.createElement("script");
+    hm.src = "https://hm.baidu.com/hm.js?5d34fac7549012573231b479396bbc40";
+    var s = document.getElementsByTagName("script")[0]; 
+    s.parentNode.insertBefore(hm, s);
+  })();
+  </script>
 <body>
 
   <div id="root"></div>

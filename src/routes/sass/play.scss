@@ -18,6 +18,9 @@
     height:.8rem;
     border-radius: 50%;
   }
+  p{
+    margin-bottom: 0;
+  }
 }
 .play_wrap{
   width:100%;
@@ -25,9 +28,13 @@
   background: darkred;
   color:black;
   position: fixed;
+  display: flex;
+  flex-direction: column;
   left:0;
   top:0;
   z-index:9;
+  box-sizing: border-box;
+  padding:.2rem 0;
   box-sizing: border-box;
   color:white;
   .play_goback_box{
@@ -57,31 +64,33 @@
   }
   .container_wrap{
     width:100%;
-    height:5.8rem;
+    flex:1;
     position: relative;
   }
   .imgbox{
     position: absolute;
     left:0;
     top:0;
-    margin-top:1.5rem;
     width:100%;
-    height:3rem;
+    height:100%;
+    box-sizing: border-box;
     display: flex;
     line-height: 3rem;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     animation: music_play 10s linear infinite;
     img{
-      width:3rem;
-      height:3rem;
+      width:5rem;
+      height:5rem;
       border-radius: 50%;
-      border:.5rem solid black;
+      border:1rem solid black;
     }
   }
   .limitbox{
     width:100%;
-    height:6.2rem;
+    height:100%;
+    padding:.1rem 0;
+    box-sizing: border-box;
     background: black;
     position: absolute;
     left:0;
@@ -111,12 +120,15 @@
     position: absolute;
     left:0;
     top:0;
-    margin-top:.5rem;
     width:100%;
-    height:5.8rem;
+    height:100%;
+    padding:.1rem 0;
+    box-sizing: border-box;
     background: black;
     margin-bottom: -.3rem;
     overflow: hidden;
+    padding:.1rem 0;
+    box-sizing: border-box;
     .kong{
       width:100%;
       height:4rem;
@@ -189,7 +201,6 @@
   .modebox{
     width:100%;
     height:1rem;
-    margin-top:.4rem;
     display: flex;
     justify-content: space-between;
     padding:0 .2rem;
